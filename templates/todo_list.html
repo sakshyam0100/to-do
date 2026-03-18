@@ -1,0 +1,11 @@
+<h1> My Todos</h1>
+    <button><a href="create/">ADD</a></button>
+
+{% for todo in todos%}
+  <p>{{todo.title}}
+    <button><a href="update/{{todo.id}}/">Update</a></button>
+    <button><a href="delete/{{todo.id}}/">Delete</a></button>
+
+  </p>
+{% endfor %}
+
